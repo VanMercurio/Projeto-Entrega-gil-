@@ -1,0 +1,4 @@
+SECRET_KEY=uma_chave_secreta_muito_complexa_e_unica_1234567890
+TWILIO_ACCOUNT_SID = XXXX
+TWILIO_AUTH_TOKEN = XXX
+TWILIO_NUMBER = XXXX

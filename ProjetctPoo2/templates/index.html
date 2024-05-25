@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portaria - Enviar Mensagem</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Enviar Mensagem ao Morador</h1>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <div>
+                {{ form.apartment_number.label }}<br>
+                {{ form.apartment_number(size=32) }}
+            </div>
+            <div>
+                {{ form.message.label }}<br>
+                {{ form.message(size=32) }}
+            </div>
+            <div>
+                {{ form.phone_number.label }}<br>
+                {{ form.phone_number(size=32) }}
+            </div>
+            <div>
+                {{ form.submit() }}
+            </div>
+        </form>
+    </div>
+</body>
+</html>
